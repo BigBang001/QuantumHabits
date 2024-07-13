@@ -1,0 +1,103 @@
+/* General body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7; /* Light Gray for background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for content */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+header {
+    background-color: #343a40; /* Gunmetal */
+    color: #ffffff; /* White text */
+    padding: 20px 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0056b3; /* Accent border */
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+/* Navigation menu */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #343a40; /* Gunmetal for text */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0056b3; /* Darker shade for hover */
+}
+
+/* Dynamic Flash Cards */
+.flash-card {
+    background-color: #ffffff; /* White background */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 8px solid #0056b3; /* Accent color on the left */
+    transition: transform 0.3s ease;
+}
+
+.flash-card:hover {
+    transform: translateY(-8px); /* Lift effect on hover */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.flash-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0056b3; /* Darker shade for header */
+}
+
+.flash-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555; /* Dark Gray text */
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0056b3; /* Accent color */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #004080; /* Darker shade on hover */
+}

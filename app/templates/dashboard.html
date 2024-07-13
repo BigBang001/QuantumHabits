@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - QuantumHabits</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav>
+        <!-- Navigation bar content -->
+        <ul>
+            <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('add_habit') }}">Add New Habit</a></li>
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Welcome to QuantumHabits</h1>
+        <h2>My Habits</h2>
+        <ul>
+            {% for habit in habits %}
+                <li>{{ habit.name }} - {{ habit.description }}</li>
+            {% endfor %}
+        </ul>
+
+        <!-- Achievements Section -->
+        <h2>My Achievements</h2>
+        <div class="achievements">
+            {% for achievement in achievements %}
+                <div class="achievement-card">
+                    <h3>{{ achievement.name }}</h3>
+                    <p>{{ achievement.description }}</p>
+                    {% if achievement.badge_url %}
+                        <img src="{{ achievement.badge_url }}" alt="Badge">
+                    {% endif %}
+                    <p>Progress: {{ achievement.progress }}</p>
+                    <a href="{{ url_for('share_achievement', achievement_id=achievement.id) }}" class="share-btn">Share</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

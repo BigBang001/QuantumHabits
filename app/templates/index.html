@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantumHabits</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>QuantumHabits</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="flash-card">
+            <h2>Exercise Routine</h2>
+            <p>Track your daily exercise with QuantumHabits and stay fit!</p>
+            <a href="#" class="btn">Track Now</a>
+        </div>
+        <div class="flash-card">
+            <h2>Reading Goals</h2>
+            <p>Set reading goals and track your progress seamlessly.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="flash-card">
+            <h2>Healthy Eating</h2>
+            <p>Monitor your diet and improve your eating habits with QuantumHabits.</p>
+            <a href="#" class="btn">View Recipes</a>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
