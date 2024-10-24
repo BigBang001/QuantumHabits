@@ -38,7 +38,6 @@ QuantumHabits aims to:
   
 - **AI Integration:** Decision tree classifiers trained on user data to enhance habit recommendations and personalized insights.
 
-- **Deployment:** Hosted on Heroku to ensure accessibility and scalability, providing a seamless experience across devices.
 
 ### How to Use
 
